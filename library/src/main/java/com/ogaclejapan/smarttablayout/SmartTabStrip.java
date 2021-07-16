@@ -398,10 +398,10 @@ class SmartTabStrip extends LinearLayout {
             float padding = (Math.abs(left - right) - indicatorWidth) / 2f;
             switch (indicatorHorizontalGravity) {
                 case GRAVITY_START:
-                    indicatorRectF.set(left, top, right - padding, bottom);
+                    indicatorRectF.set(left, top, right - (padding * 2), bottom);
                     break;
                 case GRAVITY_END:
-                    indicatorRectF.set(left + padding, top, right, bottom);
+                    indicatorRectF.set(left + (padding * 2), top, right, bottom);
                     break;
                 case GRAVITY_CENTER:
                 default:
